@@ -1,0 +1,295 @@
+$first_color: rgba(50, 56, 82, 0.164);
+$sencond_color: #212529;
+$third_color: #3A3A3A;
+
+$color_black: black;
+$color_white: white;
+
+body {
+    overflow-x: hidden !important;
+
+    a {
+        color: $sencond_color;
+    }
+
+    #header {
+        background-image: url(../images/camel-caravan-dune-erg-chebbi-usa.jpg);
+        background-size: 135em;
+        background-repeat: no-repeat;
+        background-position-x: -15em;
+        padding: 2em 0 8em 0;
+
+        .container {
+            max-width: 1140px !important;
+
+            header {
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                img {
+                    height: 46px;
+                }
+            }
+
+            .content {
+                margin-top: 60px;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                margin: 6em auto 0em auto;
+                flex-direction: column;
+
+
+                h1 {
+                    color: $color_white;
+                    font-family: "Gilroy-Bold", sans-serif;
+                    font-size: 48px;
+                    line-height: 60px;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: $color_white;
+                    font-size: 18px;
+                    line-height: 34px;
+                    font-family: "Gilroy-Medium", sans-serif;
+                    font-weight: 400;
+                    margin-top: 40px;
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    background-color: $first_color;
+    height: auto;
+
+    .container {
+        max-width: 1140px !important;
+
+        .content {
+            padding: 8em 0;
+
+            .title {
+                text-align: center;
+                font-size: 50px;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 900;
+                line-height: 100px;
+                top: -15px;
+                
+                .title-main {
+                    font-weight: 700;
+                    margin-bottom: 2em;
+                }
+                
+                .title-bg {
+                    font-size: 80px;
+                    color: #2424241a;
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    width: 100%;
+                    font-weight: 200;
+                    pointer-events: none;
+                    z-index: -1;
+                }
+            }
+
+
+            .row {
+                margin-top: 2em;
+                .col {
+                    ._card {
+                        width: 100%;
+                        background-color: $color_white;
+                        padding: 2em;
+
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            h3 {
+                                width: fit-content;
+                                border-bottom: 2px dotted red;
+                                text-align: center;
+                                font-size: 24px;
+                                font-weight: 700;
+                                padding-bottom: .5em;
+                            }
+
+                            li {
+                                font-size: 18px;
+
+                                &::marker {
+                                    color: #22b476;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.point {
+    padding: 3em 0;
+
+    .row {
+
+        .title {
+            text-align: center;
+            font-size: 50px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 100px;
+            top: -15px;
+            
+            .title-main {
+                text-align: center;
+                font-weight: 600;
+                color: $third_color;
+            }
+            
+            .title-bg {
+                font-size: 80px;
+                color: #2424241a;
+                position: absolute;
+                top: -3px;
+                left: 0;
+                width: 100%;
+                font-weight: 200;
+                pointer-events: none;
+                z-index: -1;
+            }
+        }
+
+        p {
+            color: $third_color;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .col {
+            padding: 0 !important;
+            margin-top: 3em;
+
+            img {
+                object-fit: cover;
+                border-radius: 10px;
+                width: 38em;
+                height: 100%;
+                display: flex;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.traveling {
+    margin-top: 2em;
+
+    .container {
+        max-width: 1140px !important;
+
+        .header {
+            .title {
+                text-align: center;
+                font-size: 50px;
+                position: relative;
+                text-transform: uppercase;
+                font-weight: 900;
+                line-height: 100px;
+                top: -15px;
+                
+                .title-main {
+                    text-align: center;
+                    font-weight: 600;
+                    color: $third_color;
+                }
+                
+                .title-bg {
+                    font-size: 80px;
+                    color: #2424241a;
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                    width: 100%;
+                    font-weight: 200;
+                    pointer-events: none;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .row {
+            margin-top: 4em;
+        }
+    }
+
+    .submit-email {
+        margin-top: 8em;
+        text-align: center;
+
+        .m_card {
+            background-color: $first_color;
+            width: fit-content;
+            margin: 0 auto;
+            padding: .75em 2em;
+            display: flex;
+            gap: 10px;
+            border: 1px dotted $color_black;
+
+            p {
+                font-size: 18px;
+                margin: .1em 0;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 3em;
+    padding: 1.5em 0;
+    background-color: $first_color;
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        justify-content: center;
+        margin: auto 0;
+    }
+}
+
+
+.privacypolicies-com---palette-light.privacypolicies-com---nb {
+    background-color: $sencond_color  !important;
+    color: $color_white  !important;
+    width: 27%;
+    margin: 0em 3em 3em 0em;
+}
+
+.privacypolicies-com---palette-light .cc-nb-title {
+    color: $color_white  !important;
+}
+
+.privacypolicies-com---palette-light .cc-nb-text {
+    color: $color_white  !important;
+}
+
+.privacypolicies-com---palette-light .cc-nb-okagree {
+    background-color: #BD8C16 !important;
+    padding: 1em 3em;
+}
+
+.privacypolicies-com---palette-light .cc-nb-changep {
+    display: none;
+}
